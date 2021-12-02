@@ -5,7 +5,7 @@ function ListItem(item) {
         <li
             key={item.id}
             className='list-item'
-            // onClick={clickItem}
+            onClick={() => this.clickItem()}
             value={item.title}
         >
             {item.title}
