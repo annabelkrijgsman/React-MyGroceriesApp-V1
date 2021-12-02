@@ -3,7 +3,10 @@ import List from './List'
 
 function GroceryList(items) {
     return (
-        <List {...items} />
+        <List 
+            item={items.item} 
+            passedFunction={items.passedFunction}
+        />
     )
 }
 
