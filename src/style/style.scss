@@ -90,6 +90,7 @@ body {
     li {
       background-color: #f6e68e;
       @include standard-li();
+      cursor: auto;
 
       display: flex;
       flex-wrap: wrap;
@@ -98,6 +99,10 @@ body {
 
       &:nth-child(odd) {
         background-color: #f1da55;
+      }
+
+      span {
+        pointer-events: none;
       }
     }
   }
