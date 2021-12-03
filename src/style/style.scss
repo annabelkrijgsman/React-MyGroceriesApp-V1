@@ -43,6 +43,11 @@ body {
   div.grocery-list {
     @include standard-div();
 
+    h1 {
+      margin: 0 0 20px 0;
+      color: #333;
+    }
+
     input[type="text"] {
       width: 250px;
       padding: 10px 10px;
@@ -78,6 +83,11 @@ body {
 
   div.shopping-cart {
     @include standard-div();
+
+    h1 {
+      margin: 0 0 20px 0;
+      color: #333;
+    }
 
     button {
       @include standard-button();

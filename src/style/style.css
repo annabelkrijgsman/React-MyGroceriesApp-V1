@@ -60,6 +60,11 @@ body div.grocery-list {
   width: 500px;
 }
 
+body div.grocery-list h1 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
 body div.grocery-list input[type="text"] {
   width: 250px;
   padding: 10px 10px;
@@ -112,6 +117,11 @@ body div.shopping-cart {
   padding: 10px;
   margin: 10px;
   width: 500px;
+}
+
+body div.shopping-cart h1 {
+  margin: 0 0 20px 0;
+  color: #333;
 }
 
 body div.shopping-cart button {
