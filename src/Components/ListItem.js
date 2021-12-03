@@ -3,12 +3,11 @@ import React from 'react'
 function ListItem(item) {
     return (
         <li
-            key={item.id}
             className='list-item'
-            onClick={item.passedFunction}
+            onClick={item.clickedItem}
             value={item.title}
         >
-            {item.title}
+            {item.title + ' ' + item.amount}
         </li>
     )
 }

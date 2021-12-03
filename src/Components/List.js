@@ -2,13 +2,33 @@ import React from 'react'
 import ListItem from './ListItem'
 
 function List(items) {
-    return (
-        <ul>
-            {Object.values(items.item).map(item => (
-                <ListItem key={item.id} title={item.title} passedFunction={items.passedFunction}/>
-            ))}
-        </ul>
-    )
+    if(items.type === 'shoppingCart') {
+        return (
+            <ul>
+                {Object.values(items.item).map(item => (
+                    <ListItem 
+                        key={item.id}
+                        title={item.title} 
+                        amount={item.amount}
+                        clickedItem={items.clickedItem}
+                    />
+                ))}
+            </ul>
+        )
+    } else {
+        return (
+            <ul>
+                {Object.values(items.item).map(item => (
+                    <ListItem 
+                        key={item.id}
+                        title={item.title} 
+                        amount=''
+                        clickedItem={items.clickedItem}
+                    />
+                ))}
+            </ul>
+        )
+    }
 }
 
 export default List
