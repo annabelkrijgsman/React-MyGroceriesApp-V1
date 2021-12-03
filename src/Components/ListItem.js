@@ -7,7 +7,8 @@ function ListItem(item) {
             onClick={item.clickedItem}
             value={item.title}
         >
-            {item.title + ' ' + item.amount}
+            <span> {item.title} </span>
+            {(item.amount !== undefined) ? <span> Amount: {item.amount} </span> : ''}
         </li>
     )
 }

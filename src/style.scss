@@ -1,0 +1,104 @@
+@import "constants";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "h h h h h h h h"
+    ". . . r r . . .";
+
+  header {
+    grid-area: h;
+    background-color: #71c174;
+    color: #fff;
+    margin: 0 0 30px 0;
+
+    h1 {
+      margin: 20px;
+    }
+  }
+
+  div#root {
+    grid-area: r;
+  }
+
+  div.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  div.grocery-list {
+    @include standard-div();
+
+    input[type="text"] {
+      width: 250px;
+      padding: 10px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      @include standard-button();
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    li {
+      background-color: #eeb46c;
+      @include standard-li();
+
+      &:nth-child(odd) {
+        background-color: #eaa148;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      span {
+        pointer-events: none;
+      }
+    }
+  }
+
+  div.shopping-cart {
+    @include standard-div();
+
+    button {
+      @include standard-button();
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    li {
+      background-color: #f6e68e;
+      @include standard-li();
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &:nth-child(odd) {
+        background-color: #f1da55;
+      }
+    }
+  }
+}

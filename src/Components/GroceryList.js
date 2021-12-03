@@ -4,7 +4,7 @@ import InputField from './InputField'
 
 function GroceryList(items) {
     return (
-        <div>
+        <div className='grocery-list'>
             <InputField 
                 addNewItem={items.addNewItem}
             />

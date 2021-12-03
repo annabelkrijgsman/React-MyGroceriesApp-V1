@@ -12,7 +12,7 @@ class Container extends Component {
                 {id: 3, title: 'Cookies'}
             ],
             shoppingListItems: [
-                {id: 1, title: 'Chocolate', amount: 2},
+                {id: 1, title: 'Icecream', amount: 2},
                 {id: 2, title: 'Berries', amount: 3},
                 {id: 3, title: 'Shampoo', amount: 1}
             ]

@@ -3,7 +3,7 @@ import List from './List'
 
 function ShoppingCart(items) {
     return (
-        <div>
+        <div className='shopping-cart'>
             <button onClick={items.emptyShoppingCart}>Empty shoppingcart</button>
             <List item={items.item} type='shoppingCart'/>
         </div>

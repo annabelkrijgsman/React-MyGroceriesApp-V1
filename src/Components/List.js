@@ -22,7 +22,6 @@ function List(items) {
                     <ListItem 
                         key={item.id}
                         title={item.title} 
-                        amount=''
                         clickedItem={items.clickedItem}
                     />
                 ))}
